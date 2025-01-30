@@ -3,6 +3,11 @@
     src: url("Norse-Bold.otf");
 }
 
+:root {
+    line-height: 1.35;
+    color: rgb(60, 60, 60);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -54,13 +59,107 @@ div.logo-container h1 {
 
 header p {
     color: white;
+    font-size: 0.8em;
+    text-decoration: underline;
 }
 
 section {
     width: 64%;
     height: 100vh;
+    font-size: 16px;
+    background-color: #eeee;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+section > p.section-para {
+    width: 68%;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+section p:nth-child(3) {
+    margin: 40px 0 60px 50px;
+}
+
+/* Form section */
+
+h3 {
+    width: 100%;  
+}
+
+form {
+    background-color: white;
+    padding: 25px 50px;
+    box-shadow: 0px 3px 15px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form div.form-control {
+    width: 26%;
+    margin-top: 12px;
+}
+
+form div.form-control:nth-of-type(even) {
+    margin: 12px 40% 0 70px;
+}
+
+label {
+    font-size: 0.7em;
+    font-weight: bold;
+    position: relative;
+    top: 4px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid rgb(198, 198, 198);
+    background-color: rgb(250, 250, 250);
+    border-radius: 6px;
+    outline: none;
+}
+
+input:invalid {
+    border: 1px solid rgb(200, 0, 0);
+}
+
+input:focus {
+    border: 2px solid skyblue;
+    box-shadow: 1px 1px 3px gray;
+
+}
+
+button {
+    margin: 30px 0 5px 50px;
+    width: 22%;
+    padding: 10px 20px;
+    background-color: #619469ee;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.12em;
+    font-weight: bold;
+    box-shadow: 0.5px 0.3px 5px black;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+section p:last-child {
+    font-size: 0.85em;
+    font-weight: bold;
+    margin: 10px 0 0 50px;
+}
+
+section p:last-child a {
+    text-decoration: none;
+    color: #619469ee;
+}
+
